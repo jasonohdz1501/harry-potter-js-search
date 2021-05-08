@@ -17,7 +17,7 @@ searchInput.addEventListener('keyup', (e) =>{
 
 
 const  getCharacters = async () => {
-  await axios.get('http://hp-api.herokuapp.com/api/characters')
+  await axios.get('https://hp-api.herokuapp.com/api/characters')
   .then(response => {
     characters = response.data
     displayCharacters(characters)
